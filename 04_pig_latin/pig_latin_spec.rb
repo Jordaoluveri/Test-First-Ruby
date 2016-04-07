@@ -68,5 +68,14 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
+  it "should still be capitalized" do
+    s = translate("Tico")
+    s.should == "Icotay"
+  end
+
+  it "should still be capitalized, even though are multiples" do
+    s = translate("Tico Teco")
+    s.should == "Icotay Ecotay"
+  end
 
 end

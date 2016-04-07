@@ -45,6 +45,7 @@ describe "Simon says" do
     # Hint: *default values*
     it "should repeat a number of times" do
       repeat("hello", 3).should == "hello hello hello"
+      repeat("hello", 7).should == "hello hello hello hello hello hello hello"
     end
   end
 
